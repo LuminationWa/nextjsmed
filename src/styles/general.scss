@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "variables";
+@import "nav";
+@import "contacto";
+@import "home";
+@import "servicios";
+@import "services";
+@import "footer";
+@import "acerca";
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    //line-height: 1.6;
+    font-size: $fs0;
+    font-family: $font-family-1;
+    color: $text-color;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f9f3ea1f;
+    height: 100vh;
+    height: 100svh;
+    color: $primary-color-400;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+}
+
+#root,
+.App {
+    height: 100%;
+    width: 100%;
+}
+
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    text-wrap: balance;
+    font-family: $font-family-2;
+}
+
+.wrapper {
+    width: min(100% - 3rem, 80ch);
+    margin-inline: auto;
+}
+
+.flow>*:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+.h1 {
+    font-size: $fs4;
+    line-height: 1.1;
+    text-wrap: balance;
+    font-weight: 400;
+    font-family: $font-family-2;
+}
+
+.highlighted {
+    border-left: 2px solid #FFA500;
+    border-right: 2px solid #FFA500;
+}
+
+.margin-top {
+    margin-top: 1rem;
+}
+
+
+.highlighted-text {
+    position: relative;
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.highlighted-text::before,
+.highlighted-text::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-top: 2px solid #000;
+    width: 20%;
+}
+
+.highlighted-text::before {
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.highlighted-text::after {
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.highlight-2 {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .highlighted-text::before,
+    .highlighted-text::after {
+        display: none;
+
+    }
+  }

@@ -1,0 +1,27 @@
+.acerca {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .h1,
+    .h2 {
+        text-align: center;
+    }
+
+    .acerca-img {
+        padding: 1rem 0 1rem 0;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    p {
+        font-weight: 300;
+        text-align: justify;
+    }
+
+    li {
+        list-style-type: none;
+    }
+}

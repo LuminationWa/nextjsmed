@@ -1,0 +1,115 @@
+.desktop-nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: block;
+}
+
+.main-nav {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+nav {
+
+  h1 {
+    font-size: $fs2;
+  }
+
+  .language-bar {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    .lang-btn {
+      font-size: $fs-1;
+      transition: all ease 0.5s;
+      opacity: 0.75;
+    }
+    .on {
+      opacity: 1;     
+      text-decoration: underline;
+    }
+    .lang-btn:hover {
+      opacity: 1;
+    }
+  }
+
+  .link {
+    transition: opacity 0.25s;
+    opacity: 0.75;
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: $secondary-color-400;
+      transition: all 0.25s ease-out;
+      opacity: 0.75;
+    }
+
+    &::before {
+      transform: translateX(-50%);
+      opacity: 0.75;
+    }
+
+    &::after {
+      transform: translateX(-50%);
+      opacity: 0.75;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      &::before {
+        width: 15%;
+      }
+
+      &::after {
+        width: 45%;
+      }
+    }
+  }
+  .logo {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .desktop-nav {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 1.5rem;
+
+    .main-nav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .desktop-nav {
+      display: flex;
+      gap: 1.25rem;
+    }
+  }
+}

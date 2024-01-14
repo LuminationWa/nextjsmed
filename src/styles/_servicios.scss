@@ -1,0 +1,98 @@
+.servicios-main {
+    padding-bottom: 100px;
+
+    .servicios-top-container {
+        .servicios-top {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 1fr 0.25fr;
+            grid-template-areas:
+            "h1 c"
+            "C p";
+            padding: 4rem 0 calc(6rem - 75px) 0;
+            place-items: center;
+
+            h1 {
+                font-family: $font-family-2;
+                font-weight: bolder;
+                transition: all ease 0.5s;
+                padding: 0.5rem;
+                font-size: $fs5;
+                grid-area: h1;
+
+            }
+            p {
+                transform: translateY(-75px);
+                font-size: $fs-1;
+                grid-area: p;
+            }
+            .sub-color {
+                color: $tertiary-color-400;
+                font-family: $font-family-2;
+                font-weight: bolder;
+                transition: all ease 0.5s;
+                padding: 0.5rem;
+                font-size: $fs5;
+            }
+        }
+    }
+
+    .servicios-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: calc(3rem + 50px);
+
+        #servicios-1 {
+            background-image: url("/pictures/servicios1.jpg");
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        #servicios-2 {
+            background-image: url("/pictures/servicios2.jpg");
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        #servicios-3 {
+            background-image: url("/pictures/servicios2.jpg");
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        .servicios-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1rem 0 1rem;
+            padding-bottom: 0;
+            border-radius: 50px;
+
+            h2 {
+                border-radius: 2.5px;
+                background: rgba(247, 247, 247, 0.569);
+                font-size: $fs3;
+                padding: 0.5rem;
+                text-align: center;
+                max-width: 90%;
+            }
+
+            .servicios-text {
+                cursor: pointer;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                transform: translateY(50px);
+                padding: 1rem;
+                background-color: white;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+        }
+    }
+
+}
