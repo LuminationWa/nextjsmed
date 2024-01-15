@@ -1,14 +1,17 @@
+import Image from "next/image";
 
 const Acerca = () => {
   return (
     <main className="acerca wrapper">
       <h1 className="h1">About us</h1>
       <h2 className="h2 highlighted-text">Our history</h2>
-      <img
+      <Image
         src="/pictures/about-desk.png"
         alt="team"
         className="acerca-img"
-      ></img>
+        height={300}
+        width={500}
+      ></Image>
       <p>
         Eduardo Medina Ylla, dividing his time between the &quot;Banco República&quot; and
         the &quot;Facultad de Derecho&quot;, managed to be accepted as an Industrial

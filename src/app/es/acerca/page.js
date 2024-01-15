@@ -5,11 +5,13 @@ const Acerca = () => {
     <main className="acerca wrapper">
       <h1 className="h1">Acerca de</h1>
       <h2 className="h2 highlighted-text">Nuestra historia</h2>
-      <img
+      <Image
         src="/pictures/about-desk.png"
         alt="team"
         className="acerca-img"
-      ></img>
+        height={300}
+        width={500}
+      ></Image>
       <p>
         Eduardo Medina Ylla, alternando en el Banco República y en el ámbito de
         la Facultad de Derecho, logró se le aceptara bajo matrícula No. 12 como
