@@ -1,3 +1,4 @@
+import OldNav from "../components/OldNav";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import FAQ from "../components/FAQ";
