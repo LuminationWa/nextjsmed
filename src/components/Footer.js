@@ -79,7 +79,7 @@ const Footer = (props) => {
           </div>
         </>
       ) : null}
-      <div className="footer-bottom">@2024 Medina Marcas</div>
+      <div className="footer-bottom">@2025 Medina Marcas</div>
     </footer>
   );
 };

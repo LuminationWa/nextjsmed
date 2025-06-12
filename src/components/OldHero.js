@@ -1,13 +1,11 @@
-import "../styles/hero.css";
 import Link from "next/link";
 import Button from "@mui/material/Button";
-import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero-split">
-        <div className="">
+    <section className="top">
+      <div className="top-section wrapper">
+        <div className="top-section-content">
           <h1 className="h1 main-h1">We are the best</h1>
           <p className="header-p">
             Accompanying you since 1968
@@ -23,18 +21,7 @@ const Hero = () => {
             <Button variant="contained">Get in touch</Button>
           </Link>
         </div>
-        <div>
-          <Image
-            src="/pictures/bg-desk5.png"
-            alt="attorneys working"
-            height={491}
-            width={736}
-            style={{
-              height: "auto",
-              width: "100%",
-            }}
-          ></Image>
-        </div>
+        <div className="image-container"></div>
       </div>
     </section>
   );

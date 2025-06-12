@@ -5,6 +5,7 @@ import FAQ from "../components/FAQ";
 import Info from "../components/Info";
 import HeaderBar from "../components/HeaderBar";
 import Hero from "../components/Hero";
+import OldHero from "../components/OldHero";
 
 const Home = () => {
   return (

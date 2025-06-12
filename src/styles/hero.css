@@ -1,0 +1,12 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    padding: clamp(11.25rem, 23.82vw, 17.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    .hero-split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: red;
+    }
+}
