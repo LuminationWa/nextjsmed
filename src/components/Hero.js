@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-split">
-        <div className="">
+        <div className="hero-text">
           <h1 className="h1 main-h1">We are the best</h1>
-          <p className="header-p">
+          <p className="hero-p">
             Accompanying you since 1968
             <br />
             Your <span className="highlight-2">Trademarks</span> and{" "}
@@ -25,13 +25,13 @@ const Hero = () => {
         </div>
         <div>
           <Image
-            src="/pictures/bg-desk5.png"
+            src="/pictures/placeholder.jpg"
             alt="attorneys working"
-            height={491}
-            width={736}
+            height={600}
+            width={367}
             style={{
               height: "auto",
-              width: "100%",
+              maxWidth: "100%",
             }}
           ></Image>
         </div>

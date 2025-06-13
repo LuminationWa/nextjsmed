@@ -20,7 +20,6 @@ nav .language-bar {
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
-  padding-top: 1rem;
 }
 nav .language-bar .lang-btn {
   font-size: clamp(0.94rem, 0.92rem + 0.11vw, 1rem);

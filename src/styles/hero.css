@@ -1,12 +1,28 @@
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #f7f7f7 60%, #000008 60%);
+  padding: clamp(11.25rem, 23.82vw, 17.25rem) 1rem
+    clamp(3.75rem, 7.82vw, 6.25rem);
+  .hero-split {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #f7f7f7;
-    padding: clamp(11.25rem, 23.82vw, 17.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
-    .hero-split {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background-color: red;
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50%;
+      .main-h1 {
+        font-weight: bolder;
+        transition: all ease 0.5s;
+        padding: 0.5rem;
+      }
+      .hero-p {
+        padding: 0.5rem;
+        font-size: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+        font-weight: 300;
+      }
     }
+  }
 }
